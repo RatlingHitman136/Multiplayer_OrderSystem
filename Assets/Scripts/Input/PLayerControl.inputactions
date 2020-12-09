@@ -1,0 +1,100 @@
+{
+    "name": "PLayerControl",
+    "maps": [
+        {
+            "name": "MainControl",
+            "id": "0dde480f-3ca0-4a28-8ac1-ee2dba13b1eb",
+            "actions": [
+                {
+                    "name": "SetOrder",
+                    "type": "Button",
+                    "id": "7a2fe0fa-417d-4245-a138-1328c41076e3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SelectUnit",
+                    "type": "Button",
+                    "id": "336dd152-71e9-4bb6-ae0d-dbdf70bed3dc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "f9570336-cee2-491f-9590-bd1f763fef0f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f6da213c-4ef2-4014-abd2-94e99a3485b8",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "KeyBorad and Mouse",
+                    "action": "SetOrder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6c4fe4a-ebcc-4229-b72f-fe19b8f5917b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "KeyBorad and Mouse",
+                    "action": "SelectUnit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f3c1ce6a-9e7d-49f5-aa34-ed166ea1a06b",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBorad and Mouse",
+                    "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Preperation",
+            "id": "fe9eb65b-fc80-4daa-9223-8d7c39e0f2d6",
+            "actions": [],
+            "bindings": []
+        },
+        {
+            "name": "Menu",
+            "id": "50bf5680-da76-44f6-81ca-f4cc15970dd2",
+            "actions": [],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "KeyBorad and Mouse",
+            "bindingGroup": "KeyBorad and Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
