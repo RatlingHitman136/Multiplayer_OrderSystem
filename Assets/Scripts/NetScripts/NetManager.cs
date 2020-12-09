@@ -15,7 +15,7 @@ public class NetManager : NetworkManager
         player.GetComponent<Player>().RpcInitFractionSelection();
     }
 
-    public override void OnClientDisconnect(NetworkConnection conn)
+    /*public override void OnClientDisconnect(NetworkConnection conn)
     {
         OnlineMenu.SetActive(false);
         OfflineMenu.SetActive(true);
@@ -29,5 +29,5 @@ public class NetManager : NetworkManager
         OfflineMenu.SetActive(false);
         this.GetComponent<NetworkManagerHUD>().enabled = true;
         base.OnClientConnect(conn);
-    }
+    }*/
 }
